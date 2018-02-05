@@ -14,7 +14,7 @@ WEB PAGE PWN3D
 --------------
 code  : python3
 terit : Depok,indonesia
-github: https://github.com/master/msf.pgb
+github: https://github.com/uriel31/webc
 """)
 print("""\033[43mCRAFTED BY \033[41m Musthafa \033[0m\n""")
 site = input("site name  :")
