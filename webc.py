@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+
+import requests
+
+
+print("""\033[92m
+__      __ ___  ___   ___
+\ \    / /| __|| - \ / _/
+ \ \/\/ / | __|| _ | | |_
+  \_/\_/  |___||___/ \___\\
+\033[0m
+--------------
+WEB PAGE PWN3D
+--------------
+code  : python3
+terit : Depok,indonesia
+github: https://github.com/master/msf.pgb
+""")
+print("""\033[43mCRAFTED BY \033[41m Musthafa \033[0m\n""")
+site = input("site name  :")
+optName = input("output name:")
+r = requests.get("http://"+site)
+t = open(optName,'w')
+t.write(r.text)
+t.close()
+print("success..!")
