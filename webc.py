@@ -19,8 +19,9 @@ github: https://github.com/uriel31/webc
 print("""\033[43mCRAFTED BY \033[41m Musthafa \033[0m\n""")
 site = input("site name  :")
 optName = input("output name:")
+p = optName+".html"
 r = requests.get("http://"+site)
-t = open(optName,'w')
+t = open(p,'w')
 t.write(r.text)
 t.close()
 print("success..!")
